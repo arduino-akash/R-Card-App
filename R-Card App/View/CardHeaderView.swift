@@ -29,7 +29,6 @@ struct CardHeaderView: View {
     } //: ZSTACK
     }
     .frame(height: 360)
-    .padding()
     .onAppear() {
       withAnimation(.easeOut(duration: 0.5)) {
         isAnimatingImage = true

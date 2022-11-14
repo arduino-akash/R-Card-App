@@ -18,8 +18,6 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            
-            
             List {
                 Section(header: HeaderView(text: "Welcome to the world of Rakuten")) {
                     SliderView()
