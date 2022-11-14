@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct R_Card_AppApp: App {
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            if isOnboarding {
+              OnboardingView()
+            } else {
+              ContentView()
+            }
+          }
     }
 }
