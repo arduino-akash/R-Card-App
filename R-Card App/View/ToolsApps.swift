@@ -27,6 +27,7 @@ struct ToolsApps: View {
                                 Text("Google")
                                     .font(.avenirNext(size: 16))
                             }
+
                         }
                         
                         Link(destination: URL(string: "https://www.freecharge.in/mobile-recharge")!){
@@ -40,8 +41,6 @@ struct ToolsApps: View {
                                     .font(.avenirNext(size: 16))
                                 
                             }
-                            
-                            
                         }
                         
                         
@@ -55,6 +54,7 @@ struct ToolsApps: View {
                                 Text("Youtube")
                                     .font(.avenirNext(size: 16))
                             }
+
                         }
                         
                         Link(destination: URL(string: "weather://")!){
@@ -68,12 +68,13 @@ struct ToolsApps: View {
                                     .font(.avenirNext(size: 16))
                                 
                             }
+
                         }
                     }
-                    
-                        
                 }
             }
+            Spacer()
+            
         }
     }
 }

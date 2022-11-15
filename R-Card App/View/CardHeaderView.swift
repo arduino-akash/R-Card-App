@@ -23,12 +23,12 @@ struct CardHeaderView: View {
 
       Image(card.image)
         .resizable()
-        .aspectRatio(contentMode: .fill)
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 200, height: 200, alignment: .center)
         .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
         .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
-    } 
     }
-    .frame(height: 360)
+    }
     .onAppear() {
       withAnimation(.easeOut(duration: 0.5)) {
         isAnimatingImage = true

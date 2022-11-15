@@ -28,6 +28,8 @@
 		AAB2ECA52922398C0084695B /* TextHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECA42922398C0084695B /* TextHeaderView.swift */; };
 		AAB2ECA7292239B70084695B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECA6292239B70084695B /* Font.swift */; };
 		AAB2ECA92923462A0084695B /* ToolsApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECA8292346290084695B /* ToolsApps.swift */; };
+		AAB2ECAC29237AB20084695B /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECAB29237AB20084695B /* Icon.swift */; };
+		AAD748222923B8320095F1A1 /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD748212923B8320095F1A1 /* AdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		AAB2ECA42922398C0084695B /* TextHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHeaderView.swift; sourceTree = "<group>"; };
 		AAB2ECA6292239B70084695B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		AAB2ECA8292346290084695B /* ToolsApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsApps.swift; sourceTree = "<group>"; };
+		AAB2ECAB29237AB20084695B /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		AAD748212923B8320095F1A1 /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,14 +89,13 @@
 		AAB2EC73292217380084695B /* R-Card App */ = {
 			isa = PBXGroup;
 			children = (
+				AAB2ECAA29237A920084695B /* Extensions */,
 				AAB2EC89292219130084695B /* App */,
 				AAB2EC84292217650084695B /* View */,
 				AAB2EC832922175F0084695B /* ViewModel */,
 				AAB2EC82292217570084695B /* Model */,
 				AAB2EC782922173A0084695B /* Assets.xcassets */,
 				AAB2EC7A2922173A0084695B /* Preview Content */,
-				AAB2ECA42922398C0084695B /* TextHeaderView.swift */,
-				AAB2ECA6292239B70084695B /* Font.swift */,
 			);
 			path = "R-Card App";
 			sourceTree = "<group>";
@@ -148,6 +151,17 @@
 				AAB2ECA029221FEB0084695B /* SettingsView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		AAB2ECAA29237A920084695B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAB2ECA42922398C0084695B /* TextHeaderView.swift */,
+				AAB2ECA6292239B70084695B /* Font.swift */,
+				AAB2ECAB29237AB20084695B /* Icon.swift */,
+				AAD748212923B8320095F1A1 /* AdView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +237,7 @@
 				AAB2ECA129221FEB0084695B /* SettingsView.swift in Sources */,
 				AAB2EC9129221B340084695B /* StartButtonView.swift in Sources */,
 				AAB2EC9729221CC90084695B /* SourceLinkView.swift in Sources */,
+				AAD748222923B8320095F1A1 /* AdView.swift in Sources */,
 				AAB2EC9B29221DBF0084695B /* SettingLabelView.swift in Sources */,
 				AAB2EC9329221BE70084695B /* CardRowView.swift in Sources */,
 				AAB2EC86292217730084695B /* Model.swift in Sources */,
@@ -238,6 +253,7 @@
 				AAB2EC9D29221E750084695B /* OnboardingView.swift in Sources */,
 				AAB2ECA92923462A0084695B /* ToolsApps.swift in Sources */,
 				AAB2EC75292217380084695B /* R_Card_AppApp.swift in Sources */,
+				AAB2ECAC29237AB20084695B /* Icon.swift in Sources */,
 				AAB2EC9F29221F030084695B /* CardDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

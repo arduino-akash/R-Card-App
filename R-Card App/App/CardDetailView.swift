@@ -18,6 +18,8 @@ struct CardDetailView: View {
     NavigationView {
       ScrollView(.vertical, showsIndicators: false) {
         VStack(alignment: .center, spacing: 20) {
+            
+            Spacer()
           // HEADER
           CardHeaderView(card: card)
           
@@ -53,6 +55,7 @@ struct CardDetailView: View {
           .padding(.horizontal, 20)
           .frame(maxWidth: 640, alignment: .center)
         } //: VSTACK
+        
         .navigationBarTitle(card.title, displayMode: .inline)
         .navigationBarHidden(true)
       } //: SCROLL

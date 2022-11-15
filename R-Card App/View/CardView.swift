@@ -21,6 +21,7 @@ struct CardView: View {
       VStack(spacing: 20) {
         Image(card.image)
           .resizable()
+          .frame(width: 200, height: 200, alignment: .center)
           .scaledToFit()
           .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
           .scaleEffect(isAnimating ? 1.0 : 0.6)

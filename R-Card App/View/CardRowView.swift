@@ -18,10 +18,11 @@ struct CardRowView: View {
     HStack {
       Image(card.image)
         .renderingMode(.original)
+        
         .resizable()
-        .aspectRatio(contentMode: .fill)
-        .frame(width: 80, height: 80, alignment: .leading)
-        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 60, height: 60, alignment: .leading)
+//        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
 //        .background(
 //          LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom)
 //        )
@@ -42,10 +43,10 @@ struct CardRowView: View {
 // MARK: - PREVIEW
 
 struct CardRowView_Previews: PreviewProvider {
-  static var previews: some View {
-      CardRowView(card: appData[1])
-      .previewLayout(.sizeThatFits)
-      .padding()
-  }
+    static var previews: some View {
+        CardRowView(card: appData[0])
+          .previewLayout(.fixed(width: 375, height: 440))
+      
+    }
 }
 
