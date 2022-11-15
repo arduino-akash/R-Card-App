@@ -10,7 +10,7 @@ import SwiftUI
 struct SliderView: View {
     
     // 1
-    private let images = ["1", "2", "3", "4"]
+    private let images = ["1", "2", "3", "4", "5"]
     
     var body: some View {
         TabView {

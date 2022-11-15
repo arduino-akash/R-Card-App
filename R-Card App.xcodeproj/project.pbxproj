@@ -27,6 +27,7 @@
 		AAB2ECA3292229020084695B /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECA2292229020084695B /* SliderView.swift */; };
 		AAB2ECA52922398C0084695B /* TextHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECA42922398C0084695B /* TextHeaderView.swift */; };
 		AAB2ECA7292239B70084695B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECA6292239B70084695B /* Font.swift */; };
+		AAB2ECA92923462A0084695B /* ToolsApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2ECA8292346290084695B /* ToolsApps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		AAB2ECA2292229020084695B /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		AAB2ECA42922398C0084695B /* TextHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHeaderView.swift; sourceTree = "<group>"; };
 		AAB2ECA6292239B70084695B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		AAB2ECA8292346290084695B /* ToolsApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsApps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				AAB2EC9829221D0C0084695B /* CardNView.swift */,
 				AAB2EC9A29221DBF0084695B /* SettingLabelView.swift */,
 				AAB2ECA2292229020084695B /* SliderView.swift */,
+				AAB2ECA8292346290084695B /* ToolsApps.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				AAB2EC9929221D0C0084695B /* CardNView.swift in Sources */,
 				AAB2ECA7292239B70084695B /* Font.swift in Sources */,
 				AAB2EC9D29221E750084695B /* OnboardingView.swift in Sources */,
+				AAB2ECA92923462A0084695B /* ToolsApps.swift in Sources */,
 				AAB2EC75292217380084695B /* R_Card_AppApp.swift in Sources */,
 				AAB2EC9F29221F030084695B /* CardDetailView.swift in Sources */,
 			);

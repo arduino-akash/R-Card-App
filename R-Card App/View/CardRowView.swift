@@ -20,8 +20,8 @@ struct CardRowView: View {
         .renderingMode(.original)
         .resizable()
         .aspectRatio(contentMode: .fill)
-        .frame(width: 80, height: 80, alignment: .center)
-//        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
+        .frame(width: 80, height: 80, alignment: .leading)
+        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
 //        .background(
 //          LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom)
 //        )
@@ -35,7 +35,7 @@ struct CardRowView: View {
           .font(.caption)
           .foregroundColor(Color.secondary)
       }
-    } //: HSTACK
+    }.frame(width: 350, alignment: .leading)
   }
 }
 

@@ -11,6 +11,8 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     
     @State private var isShowingSettings: Bool = false
+    @State private var searchText = ""
+
     
     var card: [Data] = appData
     
@@ -18,21 +20,37 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
+            ScrollView{
+            VStack{
+                Section(){
+                    Text(searchText)
+                        .searchable(text: $searchText, prompt: "Look for something")
+            }
+                
+                
                 Section(header: HeaderView(text: "Welcome to the world of Rakuten")) {
                     SliderView()
-                        .frame(height: 600)
+                        .frame(height: 650, alignment: .trailing)
                         .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 10, trailing: 10))
                         .padding()
                 }
+                
+                ToolsApps()
+                    .frame(height: 350)
+                    .padding()
+                
+
+                
                 Section(header: HeaderView(text: "Latest")) {
                     ForEach(card.shuffled()) { item in
                         NavigationLink(destination: CardDetailView(card: item)) {
                             CardRowView(card: item)
-                                .padding(.vertical, 4)
+                                .padding(.vertical, 1)
+                                .frame( alignment: .leading)
                         }
                     }
                 }
+                
             }
             .navigationTitle("R-Card")
             .navigationBarItems(
@@ -46,6 +64,7 @@ struct ContentView: View {
                         SettingsView()
                     }
             )
+            }
         } //: NAVIGATION
         .navigationViewStyle(StackNavigationViewStyle())
     }
