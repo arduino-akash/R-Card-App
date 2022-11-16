@@ -14,8 +14,6 @@ struct CardNView: View {
     
   let information: [String] = ["Developed by", "Language", "App size", "Age"]
 
-  // MARK: - BODY
-
   var body: some View {
     GroupBox() {
       DisclosureGroup("App info - ") {
@@ -41,7 +39,6 @@ struct CardNView: View {
   }
 }
 
-// MARK: - PREVIEW
 
 struct CardNView_Previews: PreviewProvider {
   static var previews: some View {

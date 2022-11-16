@@ -22,34 +22,128 @@ struct ContentView: View {
         NavigationView {
             ScrollView{
                 VStack{
-                    
                     Section(){
                         Text(searchText)
                             .searchable(text: $searchText, prompt: "Look for something")
                     }
                     
+                    Text("Building Whats never been built...")
+                        .font(Font.system(size: 36, weight: .bold))
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.red, .blue, .green, .yellow],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
                     
-                    Section(header: HeaderView(text: "Welcome to the world of Rakuten")) {
-                        SliderView()
-                            .frame(height: 650, alignment: .trailing)
-                            .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 1, trailing: 10))
-                            .padding()
+                    
+                    SliderView()
+                        .frame(height: 650, alignment: .trailing)
+                        .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 1, trailing: 10))
+                        .padding()
+                        
+                    VStack{
+                        Text("Explore")
+                            .font(.avenirNext(size: 30))
+                            .bold()
+                            .frame(width: 350, alignment: .leading)
+                            .foregroundStyle(
+                                LinearGradient(
+                                    colors: [.red, .blue, .green, .yellow],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+
+                            HStack{
+                                Link(destination: URL(string: "https://www.google.com/")!){
+                                    VStack{
+                                        Image(systemName: "magnifyingglass.circle")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .cornerRadius(10)
+                                            .padding()
+                                        Text("Google")
+                                            .font(.avenirNext(size: 16))
+                                    }
+
+                                }
+                                
+                                Link(destination: URL(string: "https://www.freecharge.in/mobile-recharge")!){
+                                    VStack{
+                                        Image(systemName: "circle.hexagonpath")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .cornerRadius(10)
+                                            .padding()
+                                        Text("Recharge")
+                                            .font(.avenirNext(size: 16))
+                                        
+                                    }
+                                }
+                                
+                                
+                                Link(destination: URL(string: "https://www.youtube.com/")!){
+                                    VStack{
+                                        Image(systemName: "airplayvideo.circle")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .cornerRadius(10)
+                                            .padding()
+                                        Text("Youtube")
+                                            .font(.avenirNext(size: 16))
+                                    }
+
+                                }
+                                
+                                Link(destination: URL(string: "weather://")!){
+                                    VStack{
+                                        Image(systemName: "cloud.sun.circle")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .cornerRadius(10)
+                                            .padding()
+                                        Text("Weather")
+                                            .font(.avenirNext(size: 16))
+                                        
+                                    }
+
+                                }
+
+                            }
+                        
+                        
                     }
-
-                        ToolsApps()
-                        .frame(height: 350,alignment: .top)
-                            .padding()
-                    Text("Building whats never been built with ❤️")
-                        .font(.avenirNext(size: 17))
-                        .padding()
                     
-                    AdView()
-                        .frame(width: 360, height: 200, alignment: .center)
-                        .border(.purple)
-                        .padding()
+                    
+//                    ToolsApps()
+//                        .frame(height: 350,alignment: .top)
+//                        .padding()
 
                     
-                    Section(header: HeaderView(text: "Latest")) {
+//                    AdView()
+//                        .frame(width: 360, height: 200, alignment: .center)
+//                        .border(.purple)
+//                        .padding()
+                    
+                    Text("R-Apps")
+                        .font(.avenirNext(size: 30))
+                        .bold()
+                        .frame(width: 350, alignment: .leading)
+                        .padding()
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.red, .blue, .green, .yellow],
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
+                        )
+                        
+
+                    
                         ForEach(card.shuffled()) { item in
                             NavigationLink(destination: CardDetailView(card: item)) {
                                 CardRowView(card: item)
@@ -57,7 +151,7 @@ struct ContentView: View {
                                     .frame( alignment: .leading)
                             }
                         }
-                    }
+                    
                     
                 }
                 .navigationTitle("R-Card")

@@ -30,7 +30,7 @@ struct SettingsView: View {
             Divider().padding(.vertical, 4)
             
             HStack(alignment: .center, spacing: 10) {
-              Image("logo")
+              Image("icon")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 80, height: 80)
@@ -79,8 +79,9 @@ struct SettingsView: View {
             label:
             SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
           ) {
-            SettingsRowView(name: "Developer", content: "Akash Singh")
-            SettingsRowView(name: "Designer", content: "Akash Singh")
+            SettingsRowView(name: "Developer & Designer", content: "Akash Singh")
+              SettingsRowView(name: "LinkedIn", linkLabel: "Akash Singh", linkDestination: "https://www.linkedin.com/in/akashsingh31march")
+
             SettingsRowView(name: "Compatibility", content: "iOS 16")
             SettingsRowView(name: "Website", linkLabel: "R-Cards", linkDestination: "www.rakuten.com")
             SettingsRowView(name: "SwiftUI", content: "4")

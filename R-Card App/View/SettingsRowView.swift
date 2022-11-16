@@ -46,7 +46,7 @@ struct SettingsRowView_Previews: PreviewProvider {
       SettingsRowView(name: "Developer", content: "Akash Singh")
         .previewLayout(.fixed(width: 375, height: 60))
         .padding()
-      SettingsRowView(name: "Website", linkLabel: "R-Card Mock UI", linkDestination: "")
+      SettingsRowView(name: "Website", linkLabel: "R-Card Mock UI", linkDestination: "https://www.linkedin.com/in/akashsingh31march")
         .preferredColorScheme(.dark)
         .previewLayout(.fixed(width: 375, height: 60))
         .padding()

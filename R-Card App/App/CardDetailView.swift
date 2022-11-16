@@ -28,7 +28,14 @@ struct CardDetailView: View {
             Text(card.title)
               .font(.largeTitle)
               .fontWeight(.heavy)
-              .foregroundColor(card.gradientColors[1])
+              .foregroundStyle(
+                LinearGradient(
+                    colors: [.red, .blue, .green, .yellow],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+        
             
             // HEADLINE
             Text(card.headline)
@@ -41,7 +48,14 @@ struct CardDetailView: View {
             // SUBHEADLINE
             Text("Learn more about \(card.title)".uppercased())
               .fontWeight(.bold)
-              .foregroundColor(card.gradientColors[1])
+              .foregroundStyle(
+                  LinearGradient(
+                      colors: [.red, .blue, .green, .yellow],
+                      startPoint: .leading,
+                      endPoint: .trailing
+                  )
+              )
+          
             
             // DESCRIPTION
             Text(card.description)

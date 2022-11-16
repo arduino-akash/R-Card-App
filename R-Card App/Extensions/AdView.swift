@@ -16,11 +16,11 @@ struct AdView: View {
     var body: some View {
         TabView {
             ForEach(images, id: \.self) { item in
-                ForEach(links, id: \.self) { item in}
                  Image(item)
                     .resizable()
                     .cornerRadius(20)
-                    .border(.red)
+                    .border(.purple)
+                    
             }
         }
         .tabViewStyle(PageTabViewStyle())
@@ -31,6 +31,6 @@ struct AdView_Previews: PreviewProvider {
     static var previews: some View {
         // 4
         AdView()
-            .previewLayout(.fixed(width: 400, height: 300))
+            .previewLayout(.fixed(width: 200, height: 350))
     }
 }

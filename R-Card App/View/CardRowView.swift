@@ -40,8 +40,6 @@ struct CardRowView: View {
   }
 }
 
-// MARK: - PREVIEW
-
 struct CardRowView_Previews: PreviewProvider {
     static var previews: some View {
         CardRowView(card: appData[0])
