@@ -44,7 +44,7 @@ struct ContentView: View {
                         .frame(height: 650, alignment: .trailing)
                         .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 1, trailing: 10))
                         .padding()
-                        
+                    
                     VStack{
                         Text("Explore")
                             .font(.avenirNext(size: 30))
@@ -57,77 +57,72 @@ struct ContentView: View {
                                     endPoint: .trailing
                                 )
                             )
-
-                            HStack{
-                                Link(destination: URL(string: "https://www.google.com/")!){
-                                    VStack{
-                                        Image(systemName: "magnifyingglass.circle")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .cornerRadius(10)
-                                            .padding()
-                                        Text("Google")
-                                            .font(.avenirNext(size: 16))
-                                    }
-
+                        
+                        HStack{
+                            Link(destination: URL(string: "https://www.google.com/")!){
+                                VStack{
+                                    Image(systemName: "magnifyingglass.circle")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .cornerRadius(10)
+                                        .padding()
+                                    Text("Google")
+                                        .font(.avenirNext(size: 16))
                                 }
                                 
-                                Link(destination: URL(string: "https://www.freecharge.in/mobile-recharge")!){
-                                    VStack{
-                                        Image(systemName: "circle.hexagonpath")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .cornerRadius(10)
-                                            .padding()
-                                        Text("Recharge")
-                                            .font(.avenirNext(size: 16))
-                                        
-                                    }
-                                }
-                                
-                                
-                                Link(destination: URL(string: "https://www.youtube.com/")!){
-                                    VStack{
-                                        Image(systemName: "airplayvideo.circle")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .cornerRadius(10)
-                                            .padding()
-                                        Text("Youtube")
-                                            .font(.avenirNext(size: 16))
-                                    }
-
-                                }
-                                
-                                Link(destination: URL(string: "weather://")!){
-                                    VStack{
-                                        Image(systemName: "cloud.sun.circle")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .cornerRadius(10)
-                                            .padding()
-                                        Text("Weather")
-                                            .font(.avenirNext(size: 16))
-                                        
-                                    }
-
-                                }
-
                             }
-                        
-                        
+                            
+                            Link(destination: URL(string: "https://www.freecharge.in/mobile-recharge")!){
+                                VStack{
+                                    Image(systemName: "circle.hexagonpath")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .cornerRadius(10)
+                                        .padding()
+                                    Text("Recharge")
+                                        .font(.avenirNext(size: 16))
+                                    
+                                }
+                            }
+                            
+                            
+                            Link(destination: URL(string: "https://www.youtube.com/")!){
+                                VStack{
+                                    Image(systemName: "airplayvideo.circle")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .cornerRadius(10)
+                                        .padding()
+                                    Text("Youtube")
+                                        .font(.avenirNext(size: 16))
+                                }
+                                
+                            }
+                            
+                            Link(destination: URL(string: "weather://")!){
+                                VStack{
+                                    Image(systemName: "cloud.sun.circle")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .cornerRadius(10)
+                                        .padding()
+                                    Text("Weather")
+                                        .font(.avenirNext(size: 16))
+                                }
+                            }
+                        }
                     }
                     
                     
-//                    ToolsApps()
-//                        .frame(height: 350,alignment: .top)
-//                        .padding()
-
+                    //                    ToolsApps()
+                    //                        .frame(height: 350,alignment: .top)
+                    //                        .padding()
                     
-//                    AdView()
-//                        .frame(width: 360, height: 200, alignment: .center)
-//                        .border(.purple)
-//                        .padding()
+                    
+                    //                    AdView()
+                    //                        .frame(width: 360, height: 200, alignment: .center)
+                    //                        .border(.purple)
+                    //                        .padding()
                     
                     Text("R-Apps")
                         .font(.avenirNext(size: 30))
@@ -141,18 +136,14 @@ struct ContentView: View {
                                 endPoint: .trailing
                             )
                         )
-                        
-
-                    
-                        ForEach(card.shuffled()) { item in
-                            NavigationLink(destination: CardDetailView(card: item)) {
-                                CardRowView(card: item)
-                                    .padding(.vertical, 1)
-                                    .frame( alignment: .leading)
-                            }
+                                        
+                    ForEach(card.shuffled()) { item in
+                        NavigationLink(destination: CardDetailView(card: item)) {
+                            CardRowView(card: item)
+                                .padding(.vertical, 1)
+                                .frame( alignment: .leading)
                         }
-                    
-                    
+                    }
                 }
                 .navigationTitle("R-Card")
                 .navigationBarItems(
