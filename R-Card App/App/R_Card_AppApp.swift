@@ -16,7 +16,7 @@ struct R_Card_AppApp: App {
             if isOnboarding {
               OnboardingView()
             } else {
-              ContentView()
+              AppView()
             }
           }
     }

@@ -10,40 +10,91 @@ import SwiftUI
 struct Icon: View {
     // MARK: - PROPERTIES
     
-    private let images = ["1", "2", "3", "4"]
-    private let names = ["Google","Recharge","Youtube","Weather"]
     
     // MARK: - BODY
     
     var body: some View {
-        VStack {
-            HStack{
-                ForEach(names, id: \.self) { item1 in
-                    
-                    ForEach(images, id: \.self) { item in
-                        
-                        VStack{
-                            Image(item)
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 80, height: 80, alignment: .leading)
-                                .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 3, x: 2, y: 2)
-                            //        .background(
-                            //          LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom)
-                            //        )
-                                .cornerRadius(8)
-                            
-                            Text(item1)
-                                .font(.avenirNext(size: 13))
-                        }
-                    }
+        HStack(alignment: .top){
+            
+            NavigationLink(destination: PinchContentView()) {
+                VStack(spacing: 8){
+                    VStack{
+                        Image("zoom").renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                    }.padding()
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    Text("Zoomin App")
+                    .font(.caption)
+                    .foregroundColor(Color.black.opacity(0.5))
+                    .multilineTextAlignment(.center)
                 }
             }
-            .tabViewStyle(PageTabViewStyle())
-        }
+                
+            
+            
+            Spacer(minLength: 15)
+            Link(destination: URL(string: "https://www.google.com/")!){
+                VStack(spacing: 8){
+                    VStack{
+                        Image("ggl").renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+
+                    }.padding()
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    Text("Google")
+                    .frame(width: 55)
+                    .font(.caption)
+                        .foregroundColor(Color.black.opacity(0.5))
+                        .multilineTextAlignment(.center)
+                }
+            }
+            
+            Spacer(minLength: 15)
+            Link(destination: URL(string: "https://www.freecharge.in/mobile-recharge")!){
+
+                VStack(spacing: 8){
+                    VStack{
+                        Image("recharge").renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                    }.padding()
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    Text("Recharge")
+                    .frame(width: 55)
+                    .font(.caption)
+                    .foregroundColor(Color.black.opacity(0.5))
+                    .multilineTextAlignment(.center)
+                }
+            }
+
+            Spacer(minLength: 15)
+            Link(destination: URL(string: "https://paytm.com/electricity-bill-payment")!){
+                VStack(spacing: 8){
+                    VStack{
+                        Image("electric").renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                    }.padding()
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    Text("Eletricity")
+                    .frame(width: 55)
+                    .font(.caption)
+                    .foregroundColor(Color.black.opacity(0.5))
+                    .multilineTextAlignment(.center)
+                }
+            }
         
-        
+        }.padding()
     }
 }
 
