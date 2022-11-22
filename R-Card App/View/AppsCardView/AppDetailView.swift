@@ -11,6 +11,7 @@ struct AppDetailView: View {
   // MARK: - PROPERTIES
   
   var data: Details
+
   
   @State private var pulsate: Bool = false
   @Environment(\.presentationMode) var presentationMode
@@ -19,31 +20,37 @@ struct AppDetailView: View {
     ScrollView(.vertical, showsIndicators: false) {
       VStack(alignment: .center, spacing: 0) {
         // IMAGE
-
+          NavigationLink(destination: MapsContentView()) {
+              
               Image(data.image)
                   .resizable()
                   .scaledToFit()
                   .frame(width: 200, height: 200)
                   .padding(.top, 80)
+          }
           
         Group {
           // TITLE
-          Text(data.title)
-            .font(.avenirNext(size: 40))
-            .fontWeight(.bold)
-            .multilineTextAlignment(.leading)
-            .foregroundColor(Color("ColorGreenAdaptive"))
-            .padding(.top, 10)
+
+                Text(data.title)
+                    .font(.avenirNext(size: 40))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(Color("ColorBlueberryDark"))
+                    .padding(.top, 10)
+            
+            AppCardNView(card: data)
+
+            
+            
             
             Text(data.headline)
               .font(.avenirNext(size: 30))
               .multilineTextAlignment(.center)
-              .foregroundColor(Color("ColorGreenAdaptive"))
             
             Text(data.Description)
               .font(.avenirNext(size: 16))
               .multilineTextAlignment(.center)
-              .foregroundColor(Color("ColorGreenAdaptive"))
         }
         .padding(.horizontal, 24)
         .padding(.vertical, 12)

@@ -45,9 +45,8 @@ struct AppsCardView: View {
         
         // HEADLINE
         Text(data.headline)
-          .font(.avenirNext(size: 20))
+          .font(.avenirNext(size: 16))
           .foregroundColor(Color.gray)
-          .italic()
             
       }
     }

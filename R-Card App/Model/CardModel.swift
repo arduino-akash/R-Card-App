@@ -13,4 +13,7 @@ struct Details: Identifiable {
   var headline: String
   var image: String
   var Description: String
+    
+    var info: [String]
+
 }

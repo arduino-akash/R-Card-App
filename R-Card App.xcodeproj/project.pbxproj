@@ -24,6 +24,7 @@
 		AA706528292BEEAD00CF93EB /* MapsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA706527292BEEAD00CF93EB /* MapsContentView.swift */; };
 		AA70652A292BEEF900CF93EB /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA706529292BEEF900CF93EB /* CircleImage.swift */; };
 		AA70652C292BEF1300CF93EB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70652B292BEF1300CF93EB /* MapView.swift */; };
+		AA70652E292C886000CF93EB /* AppCardNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70652D292C886000CF93EB /* AppCardNView.swift */; };
 		AAB2EC75292217380084695B /* R_Card_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2EC74292217380084695B /* R_Card_AppApp.swift */; };
 		AAB2EC77292217380084695B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2EC76292217380084695B /* ContentView.swift */; };
 		AAB2EC792922173A0084695B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB2EC782922173A0084695B /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		AA706527292BEEAD00CF93EB /* MapsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsContentView.swift; sourceTree = "<group>"; };
 		AA706529292BEEF900CF93EB /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		AA70652B292BEF1300CF93EB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AA70652D292C886000CF93EB /* AppCardNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardNView.swift; sourceTree = "<group>"; };
 		AAB2EC71292217380084695B /* R-Card App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Card App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB2EC74292217380084695B /* R_Card_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Card_AppApp.swift; sourceTree = "<group>"; };
 		AAB2EC76292217380084695B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				AA7064F7292B825B00CF93EB /* AppsCardView.swift */,
 				AA7064FB292B849700CF93EB /* AppDetailView.swift */,
+				AA70652D292C886000CF93EB /* AppCardNView.swift */,
 			);
 			path = AppsCardView;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				AAB2EC9D29221E750084695B /* OnboardingView.swift in Sources */,
 				AA70652A292BEEF900CF93EB /* CircleImage.swift in Sources */,
 				AAB2EC75292217380084695B /* R_Card_AppApp.swift in Sources */,
+				AA70652E292C886000CF93EB /* AppCardNView.swift in Sources */,
 				AAB2ECAC29237AB20084695B /* Icon.swift in Sources */,
 				AAB2EC9F29221F030084695B /* CardDetailView.swift in Sources */,
 			);
