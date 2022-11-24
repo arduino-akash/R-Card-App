@@ -54,6 +54,19 @@
 		AAD748222923B8320095F1A1 /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD748212923B8320095F1A1 /* AdView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AAF134B7292F2B6F00326159 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AA7064E9292A30C700CF93EB /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		AA7064EB292A30F200CF93EB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -169,6 +182,7 @@
 			children = (
 				AAB2EC73292217380084695B /* R-Card App */,
 				AAB2EC72292217380084695B /* Products */,
+				AAF134B4292F2B6F00326159 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,6 +292,13 @@
 			path = PinchApp;
 			sourceTree = "<group>";
 		};
+		AAF134B4292F2B6F00326159 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +309,7 @@
 				AAB2EC6D292217380084695B /* Sources */,
 				AAB2EC6E292217380084695B /* Frameworks */,
 				AAB2EC6F292217380084695B /* Resources */,
+				AAF134B7292F2B6F00326159 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

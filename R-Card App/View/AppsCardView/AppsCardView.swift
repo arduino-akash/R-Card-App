@@ -19,36 +19,37 @@ struct AppsCardView: View {
       
     VStack(alignment: .leading, spacing: 0) {
       // CARD IMAGE
-        NavigationLink(destination: MapsContentView()) {
+            NavigationLink(destination: MapsContentView()) {
+                
+                Image(data.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .padding(.leading, 5)
+                
+            }
             
-            Image(data.image)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-                .padding(.leading, 5)
-
-        }
-      
-      VStack(alignment: .leading, spacing: 12) {
-        // TITLE
-        Text(data.title)
-              .font(.avenirNext(size: 30))
-              .bold()
-              .frame(width: 350, alignment: .leading)
-              .foregroundStyle(
-                  LinearGradient(
-                      colors: [.red, .blue, .green, .yellow],
-                      startPoint: .leading,
-                      endPoint: .trailing
-                  )
-              )
-        
-        // HEADLINE
-        Text(data.headline)
-          .font(.avenirNext(size: 16))
-          .foregroundColor(Color.gray)
-            
-      }
+            VStack(alignment: .leading, spacing: 12) {
+                // TITLE
+                Text(data.title)
+                    .font(.avenirNext(size: 30))
+                    .bold()
+                    .frame(width: 350, alignment: .leading)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.red, .blue, .green, .yellow],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                
+                // HEADLINE
+                Text(data.headline)
+                    .font(.avenirNext(size: 16))
+                    .foregroundColor(Color.gray)
+                
+                
+            }
     }
     .padding()
     .background(Color.white)

@@ -22,9 +22,9 @@ struct AppHeaderView: View {
   
   var body: some View {
     ZStack {
-      Image(header.image)
-        .resizable()
-        .aspectRatio(contentMode: .fill)
+//      Image(header.image)
+//        .resizable()
+//        .aspectRatio(contentMode: .fill)
         
       
       HStack(alignment: .top, spacing: 0) {

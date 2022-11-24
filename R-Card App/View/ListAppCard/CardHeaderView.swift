@@ -20,13 +20,19 @@ struct CardHeaderView: View {
     ZStack {
 //      LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .topLeading, endPoint: .bottomTrailing)
         Link(destination: URL(string: card.url)!){
-
       Image(card.image)
         .resizable()
         .aspectRatio(contentMode: .fit)
-        .frame(width: 200, height: 200, alignment: .center)
+        .cornerRadius(10)
+        .frame(width: 100, height: 100, alignment: .center)
+        .padding()
+        .background(Color.black.opacity(0.5))
         .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
         .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
+        .padding(.top, 70)
+        .padding(.bottom, 20)
+
+
     }
     }
     .onAppear() {

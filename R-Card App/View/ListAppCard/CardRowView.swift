@@ -18,7 +18,6 @@ struct CardRowView: View {
     HStack {
       Image(card.image)
         .renderingMode(.original)
-        
         .resizable()
         .aspectRatio(contentMode: .fit)
         .frame(width: 60, height: 60, alignment: .leading)
@@ -30,11 +29,12 @@ struct CardRowView: View {
       
       VStack(alignment: .leading, spacing: 5) {
         Text(card.title)
+          .foregroundColor(Color.white)
           .font(.title2)
           .fontWeight(.bold)
         Text(card.headline)
           .font(.caption)
-          .foregroundColor(Color.secondary)
+          .foregroundColor(Color.white)
       }
     }.frame(width: 350, alignment: .leading)
   }

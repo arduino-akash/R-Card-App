@@ -72,8 +72,12 @@ struct CardDetailView: View {
         
         .navigationBarTitle(card.title, displayMode: .inline)
         .navigationBarHidden(true)
-      } //: SCROLL
-      .edgesIgnoringSafeArea(.top)
+      }.background(
+        Image("image")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+    ) //: SCROLL
+      .edgesIgnoringSafeArea(.all)
     } //: NAVIGATION
     .navigationViewStyle(StackNavigationViewStyle())
   }

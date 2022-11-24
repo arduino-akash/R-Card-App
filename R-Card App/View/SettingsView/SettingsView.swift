@@ -87,7 +87,6 @@ struct SettingsView: View {
           }
           
         } //: VSTACK
-        .navigationBarTitle(Text("Settings"), displayMode: .large)
         .navigationBarItems(
           trailing:
             Button(action: {
@@ -97,7 +96,11 @@ struct SettingsView: View {
             }
         )
         .padding()
-      } //: SCROLL
+      }.background(
+        Image("image")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+    )            .edgesIgnoringSafeArea(.all) //: SCROLL
     } //: NAVIGATION
   }
 }

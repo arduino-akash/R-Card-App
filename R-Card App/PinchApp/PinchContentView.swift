@@ -198,7 +198,11 @@ struct PinchContentView: View {
           .padding(.top, UIScreen.main.bounds.height / 12)
           .offset(x: isDrawerOpen ? 20 : 215)
         , alignment: .topTrailing
-      )
+      ).background(
+        Image("image")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+    )            .edgesIgnoringSafeArea(.all)
     } //: NAVIGATION
     .navigationViewStyle(.stack)
   }

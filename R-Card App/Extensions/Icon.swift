@@ -19,16 +19,16 @@ struct Icon: View {
             NavigationLink(destination: PinchContentView()) {
                 VStack(spacing: 8){
                     VStack{
-                        Image("zoom").renderingMode(.original)
+                        Image(systemName: "dot.arrowtriangles.up.right.down.left.circle").renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 50)
                     }.padding()
-                    .background(Color.black.opacity(0.05))
+                        .background(Color.black.opacity(0.5))
                     .cornerRadius(10)
                     Text("Zoomin App")
                     .font(.caption)
-                    .foregroundColor(Color.black.opacity(0.5))
+                    .foregroundColor(Color.white.opacity(0.8))
                     .multilineTextAlignment(.center)
                 }
             }
@@ -39,18 +39,18 @@ struct Icon: View {
             Link(destination: URL(string: "https://www.google.com/")!){
                 VStack(spacing: 8){
                     VStack{
-                        Image("ggl").renderingMode(.original)
+                        Image(systemName: "magnifyingglass.circle").renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 50)
 
                     }.padding()
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.black.opacity(0.5))
                     .cornerRadius(10)
                     Text("Google")
                     .frame(width: 55)
                     .font(.caption)
-                        .foregroundColor(Color.black.opacity(0.5))
+                    .foregroundColor(Color.white.opacity(0.8))
                         .multilineTextAlignment(.center)
                 }
             }
@@ -60,17 +60,17 @@ struct Icon: View {
 
                 VStack(spacing: 8){
                     VStack{
-                        Image("recharge").renderingMode(.original)
+                        Image(systemName: "bonjour").renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 50)
                     }.padding()
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.black.opacity(0.5))
                     .cornerRadius(10)
                     Text("Recharge")
                     .frame(width: 55)
                     .font(.caption)
-                    .foregroundColor(Color.black.opacity(0.5))
+                    .foregroundColor(Color.white.opacity(0.8))
                     .multilineTextAlignment(.center)
                 }
             }
@@ -79,17 +79,17 @@ struct Icon: View {
             Link(destination: URL(string: "https://paytm.com/electricity-bill-payment")!){
                 VStack(spacing: 8){
                     VStack{
-                        Image("electric").renderingMode(.original)
+                        Image(systemName: "lightbulb.circle").renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 50)
                     }.padding()
-                    .background(Color.black.opacity(0.05))
+                    .background(Color.black.opacity(0.5))
                     .cornerRadius(10)
                     Text("Eletricity")
                     .frame(width: 55)
                     .font(.caption)
-                    .foregroundColor(Color.black.opacity(0.5))
+                    .foregroundColor(Color.white.opacity(0.5))
                     .multilineTextAlignment(.center)
                 }
             }

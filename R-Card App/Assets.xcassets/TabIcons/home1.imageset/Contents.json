@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "tabicon-branch.pdf",
+      "filename" : "mouse-cursor 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "tabicon-branch-1.pdf",
+      "filename" : "mouse-cursor 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -23,7 +23,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "tabicon-branch-dark.pdf",
+      "filename" : "mouse-cursor.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

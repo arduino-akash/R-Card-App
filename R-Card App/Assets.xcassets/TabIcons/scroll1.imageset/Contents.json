@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "tabicon-book.pdf",
+      "filename" : "home-icon-silhouette (1) 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "tabicon-book-1.pdf",
+      "filename" : "home-icon-silhouette (1) 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -23,7 +23,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "tabicon-book-dark.pdf",
+      "filename" : "home.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

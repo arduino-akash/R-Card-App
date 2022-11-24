@@ -69,21 +69,17 @@ struct ContentView: View {
                                     endPoint: .trailing
                                 )
                             )
-                        
                         Icon()
                             .padding()
-                        
                     }
                     
                     VStack(alignment: .center, spacing: 20) {
                       ForEach(info) { item in
                           AppsCardView(data: item)
+
                       }
                     }
-                    .frame(maxWidth: 640)
-                    .padding(.horizontal)
-                    
-
+                    .frame(maxWidth: 600)
                     
                     Text("R-Apps")
                         .font(.avenirNext(size: 30))
@@ -101,12 +97,14 @@ struct ContentView: View {
                     ForEach(card.shuffled()) { item in
                         NavigationLink(destination: CardDetailView(card: item)) {
                             CardRowView(card: item)
-                                .padding(.vertical, 1)
                                 .frame( alignment: .leading)
                         }
                     }
+
                 }
                 .navigationTitle("R-Card")
+                .navigationBarTitleTextColor(Color.white)
+
                 .navigationBarItems(
                     trailing:
                         Button(action: {
@@ -119,19 +117,15 @@ struct ContentView: View {
                         }
                 )
             }
+            .background(
+                Image("image")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            )
+            .edgesIgnoringSafeArea(.top)
         } //: NAVIGATION
         .navigationViewStyle(StackNavigationViewStyle())
-
-        
-//        .background(
-//            Image("background")
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//        )
-//        .edgesIgnoringSafeArea(.all)
-        
     }
-        
 }
 
 // MARK: - PREVIEW
@@ -143,3 +137,19 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+extension View {
+    /// Sets the text color for a navigation bar title.
+    /// - Parameter color: Color the title should be
+    ///
+    /// Supports both regular and large titles.
+    @available(iOS 14, *)
+    func navigationBarTitleTextColor(_ color: Color) -> some View {
+        let uiColor = UIColor(color)
+    
+        // Set appearance for both normal and large sizes.
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: uiColor ]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: uiColor ]
+    
+        return self
+    }
+}

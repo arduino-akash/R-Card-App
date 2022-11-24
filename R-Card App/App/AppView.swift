@@ -12,14 +12,17 @@ struct AppView: View {
     TabView {
       HomeView()
         .tabItem({
-          Image("scroll")
+          Image(systemName: "house.circle")
+                .font(.largeTitle)
 
           Text("Home")
         })
       ContentView()
         .tabItem({
-          Image("home")
-          Text("R-Card")
+            Image(systemName: "forward.end.circle")
+                .font(.largeTitle)
+            
+            Text("R-Card")
         })
     }
     .accentColor(Color.primary)
