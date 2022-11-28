@@ -9,34 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     // MARK: - PROPERTIES
-    
-    
+
     @State private var pulsateAnimation: Bool = false
     @State private var searchText = ""
-    
     
     var body: some View {
         NavigationView{
             ScrollView{
-                
                 VStack {
                     Section(header: HeaderView(text: "")) {
                         Text("Welcome to R-Cards")
                             .searchable(text: $searchText)
                             .navigationTitle("R-Cards")
                     }
-                    
-                    
-                    
-                    SliderView()
-                        .frame(width: 350, height: 600, alignment: .center)
 
-//                        .frame(height: 650, width: 200, alignment: .trailing)
+                    SliderView()
+                        .frame(width: 360, height: 600, alignment: .center)
                         .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 1, trailing: 10))
                         .padding(.leading, 20)
                         .padding(.trailing, 20)
                         .padding(.top, 125)
-                    
                     
                     
                     Text("""
@@ -55,25 +47,27 @@ Building whats never been built
                         )
                     )
                     
-                    Section(header: HeaderView(text: "")) {
-                        Text("""
-                         Live it
-                         up
+                    Text("""
+                         Live
+                         it up!
                          """)
-                        .frame(width: 400, height: 300, alignment: .leading)
-                        .padding(.leading, 40)
-
-                        
-                        .font(Font.system(size: 90, weight: .bold))
-                        
-                        .foregroundStyle(
-                            LinearGradient(
-                                colors: [.green, .blue, .red, .purple],
-                                startPoint: .leading,
-                                endPoint: .trailing
-                            )
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 40)
+                    .font(Font.system(size: 90, weight: .bold))
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.green, .blue, .red, .purple],
+                            startPoint: .leading,
+                            endPoint: .trailing
                         )
-                    }
+                    )
+                    
+                    Text("Crafted with ❤️ in Rakuten India")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 40)
+                        .padding(.bottom, 100)
+                        .font(Font.system(size: 16, weight: .light))
+                        .foregroundColor(.gray)
                     
                     Spacer()
                 }.navigationTitle("R-Card")
