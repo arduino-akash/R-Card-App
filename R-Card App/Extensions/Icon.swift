@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
+import AZFramework
+import PinchFramework
+
 
 struct Icon: View {
-    // MARK: - PROPERTIES
-    
     
     // MARK: - BODY
-    
     var body: some View {
         HStack(alignment: .top){
-            
             NavigationLink(destination: PinchContentView()) {
                 VStack(spacing: 8){
                     VStack{
@@ -32,11 +31,9 @@ struct Icon: View {
                     .multilineTextAlignment(.center)
                 }
             }
-                
-            
-            
+                            
             Spacer(minLength: 15)
-            Link(destination: URL(string: "https://www.google.com/")!){
+            Link(destination: URL(string: "www.google.com")!){
                 VStack(spacing: 8){
                     VStack{
                         Image(systemName: "magnifyingglass.circle").renderingMode(.original)
@@ -51,7 +48,7 @@ struct Icon: View {
                     .frame(width: 55)
                     .font(.caption)
                     .foregroundColor(Color.white.opacity(0.8))
-                        .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.center)
                 }
             }
             

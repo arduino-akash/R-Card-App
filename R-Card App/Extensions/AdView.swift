@@ -15,11 +15,14 @@ struct AdView: View {
     
     var body: some View {
         TabView {
+            ForEach(links, id: \.self) { item in
+
             ForEach(images, id: \.self) { item in
-                 Image(item)
-                    .resizable()
-                    .cornerRadius(20)
-                    .border(.purple)
+                    Image(item)
+                        .resizable()
+                        .cornerRadius(20)
+                        .frame(width: 400, height: 250, alignment: .center)
+                }
                     
             }
         }

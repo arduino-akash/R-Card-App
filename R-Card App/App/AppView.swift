@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AKChatBot
 
 struct AppView: View {
   var body: some View {
@@ -24,6 +25,13 @@ struct AppView: View {
             
             Text("R-Card")
         })
+        BotContentView()
+          .tabItem({
+            Image(systemName: "person.crop.circle.dashed")
+                  .font(.largeTitle)
+
+            Text("ChatBot")
+          })
     }
     .accentColor(Color.primary)
   }

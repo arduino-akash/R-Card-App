@@ -7,6 +7,7 @@
 
 
 import SwiftUI
+import AZFramework
 
 struct AppsCardView: View {
   // MARK: - PROPERTIES
@@ -19,7 +20,7 @@ struct AppsCardView: View {
       
     VStack(alignment: .leading, spacing: 0) {
       // CARD IMAGE
-            NavigationLink(destination: MapsContentView()) {
+            NavigationLink(destination: MContentView()) {
                 
                 Image(data.image)
                     .resizable()

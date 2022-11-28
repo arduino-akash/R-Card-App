@@ -8,46 +8,44 @@
 import SwiftUI
 
 struct CardHeaderView: View {
-  // MARK: - PROPERTIES
-  
+    // MARK: - PROPERTIES
+    
     var card: Data
-
-  @State private var isAnimatingImage: Bool = false
-
-  // MARK: - BODY
-
-  var body: some View {
-    ZStack {
-//      LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .topLeading, endPoint: .bottomTrailing)
-        Link(destination: URL(string: card.url)!){
-      Image(card.image)
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .cornerRadius(10)
-        .frame(width: 100, height: 100, alignment: .center)
-        .padding()
-        .background(Color.black.opacity(0.5))
-        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
-        .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
-        .padding(.top, 70)
-        .padding(.bottom, 20)
-
-
+    
+    @State private var isAnimatingImage: Bool = false
+    
+    // MARK: - BODY
+    
+    var body: some View {
+        ZStack {
+//                  LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .topLeading, endPoint: .bottomTrailing)
+            Link(destination: URL(string: card.url)!){
+                Image(card.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .cornerRadius(30)
+                    .padding()
+                    .background(Color.black.opacity(0.5))
+                    .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
+                    .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
+                    .padding(.top, 70)
+                    .padding(.bottom, 20)
+            }
+        }
+        .onAppear() {
+            withAnimation(.easeOut(duration: 0.5)) {
+                isAnimatingImage = true
+            }
+        }
     }
-    }
-    .onAppear() {
-      withAnimation(.easeOut(duration: 0.5)) {
-        isAnimatingImage = true
-      }
-    }
-  }
 }
 
 // MARK: - PREVIEW
 
 struct CardHeaderView_Previews: PreviewProvider {
-  static var previews: some View {
-    CardHeaderView(card: appData[0])
-      .previewLayout(.fixed(width: 375, height: 440))
-  }
+    static var previews: some View {
+        CardHeaderView(card: appData[0])
+            .previewLayout(.fixed(width: 375, height: 440))
+    }
 }

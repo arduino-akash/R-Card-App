@@ -22,3 +22,13 @@ struct HeaderView_Previews: PreviewProvider {
         HeaderView(text: "Welcome to My App")
     }
 }
+
+extension Font {
+    static func avenirNext(size: Int) -> Font {
+        return Font.custom("Avenir Next", size: CGFloat(size))
+    }
+    
+    static func avenirNextRegular(size: Int) -> Font {
+        return Font.custom("AvenirNext-Regular", size: CGFloat(size))
+    }
+}

@@ -40,16 +40,6 @@ let appData: [Data] = [
       url: "uber://", info: ["Twitter, Inc.","English +41 More","256.9 MB","17+ Years Old"]
     ),
   Data(
-      title: "Google Maps",
-      headline: "Thanks for using Google Maps!",
-      image: "maps1",
-      gradientColors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")],
-      description: """
-              Google Maps is the best way to navigate and explore the world - all with your privacy protected...
-        """,
-      url: "maps://", info: ["Google LLC","English +37 More","211 MB","4+ Years Old"]
-    ),
-  Data(
       title: "PhonePe",
       headline: "Secure Payments App",
       image: "phonepe1",
@@ -58,26 +48,55 @@ let appData: [Data] = [
               Send money to any mobile number or bank account. Get exciting offers on recharges & bill payments. Buy insurance and pay at any online and offline outlet...
         """,
       url: "phonepe://", info: ["PhonePe PVT.","English +10 More","190.9 MB","4+ Years Old"]
-    ),
-  Data(
-      title: "Google",
-      headline: "Search with image using lens",
-      image: "google1",
-      gradientColors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")],
-      description: """
-              Get fast access to Google Search with the new Google home screen widget built for iOS 14. The Google app keeps you in the know about things that matter to you. Find quick answers, explore your interests, and stay up to date with Discover. The more you use the Google app, the better it gets...
-        """,
-      url: "https://www.google.com/", info: ["Google LLC","English +37 More","200.6 MB","17+ Years Old"]
-    ),
-  Data(
-      title: "MS Word",
-      headline: "Create a Resume, Essay or PDF",
-      image: "word1",
-      gradientColors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")],
-      description: """
-              The trusted Word app lets you create, edit, view, and share your files with others quickly and easily. Send, view and edit Office docs attached to emails from your phone with this powerful word processing app from Microsoft...
-        """,
-      url: "ms-word://", info: ["Microsoft Corporation.","English +32 More","265.9 MB","4+ Years Old"]
     )
 ]
 
+let clientData: [Fact] = [
+  Fact(
+    image: "rakuten",
+    content: "Rakuten Card Co., Ltd. offers consumer loan card and credit guarantee services. Rakuten Card Co., Ltd. also offers loans specifically designed for merchants."
+    
+  ),
+  Fact(
+    image: "viber",
+    content: "Rakuten Viber, is a cross-platform voice over IP and instant messaging software application owned by Japanese multinational company Rakuten"
+  ),
+  
+  Fact(
+    image: "tv",
+    content: "Rakuten TV is a video-on-demand streaming service, offering movies and TV series for subscription, rental and purchase. It is owned by the Japanese company Rakuten. "
+  ),
+  Fact(
+    image: "rsec",
+    content: "Rakuten Securities are Protecting our stakeholders' data is Rakuten's highest priority. Providing secure and trusted services is the key to our business growth."
+  )
+]
+
+let cardData: [Details] = [
+  Details(
+    title: "Apple Maps",
+    headline: "Apple maps takes you where you want to go",
+    image: "maps",
+    Description: "This app takes you through the weather of the all regions around the world",
+    info: ["Apple, Inc.","English +41 More","256.9 MB","17+ Years Old"]
+  )
+]
+
+let headersData: [Header] = [
+  Header(
+    image: "RM1",
+    headline: "Rakuten India",
+    subheadline: "Rakuten Group's 70+ businesses span a broad range of online and offline services, including e-commerce, travel, digital content, fintech, such as credit cards, banking, securities, insurance, electronic money and smartphone app payments, communications, including a mobile carrier service, and professional sports."
+  ),
+  Header(
+    image: "RM",
+    headline: "Fintech Department",
+    subheadline: "Rakuten's FinTech business covers a wide range of services, including credit cards, Rakuten Edy e-money, Rakuten Pay mobile payment service, banking, securities and insurance."
+  )
+]
+
+let welcomeData: [Welcome] = [
+    Welcome(image: "welcome", title: "Welcome to R-Cards Mock", description: "Smooth experience with us",  gradientColors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")], info: "Welcome to R-Cards"),
+    Welcome(image: "secure", title: "Secure & Simple", description: "End to End Security", gradientColors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")], info: "Welcome to R-Cards"),
+    Welcome(image: "responsive", title: "Responsive App Design", description: "Responsive app design", gradientColors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")], info: "Welcome to R-Cards")
+]

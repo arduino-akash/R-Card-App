@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AZFramework
 
 struct AppDetailView: View {
   // MARK: - PROPERTIES
@@ -20,7 +21,7 @@ struct AppDetailView: View {
     ScrollView(.vertical, showsIndicators: false) {
       VStack(alignment: .center, spacing: 0) {
         // IMAGE
-          NavigationLink(destination: MapsContentView()) {
+          NavigationLink(destination: MContentView()) {
               
               Image(data.image)
                   .resizable()

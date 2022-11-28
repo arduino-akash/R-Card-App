@@ -100,7 +100,6 @@ struct ContentView: View {
                                 .frame( alignment: .leading)
                         }
                     }
-
                 }
                 .navigationTitle("R-Card")
                 .navigationBarTitleTextColor(Color.white)
