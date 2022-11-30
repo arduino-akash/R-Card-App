@@ -31,16 +31,17 @@ struct Icon: View {
                     .multilineTextAlignment(.center)
                 }
             }
-                            
+            
+            
             Spacer(minLength: 15)
             Link(destination: URL(string: "www.google.com")!){
+
                 VStack(spacing: 8){
                     VStack{
                         Image(systemName: "magnifyingglass.circle").renderingMode(.original)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 50)
-
                     }.padding()
                     .background(Color.black.opacity(0.5))
                     .cornerRadius(10)

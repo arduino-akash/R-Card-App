@@ -33,7 +33,7 @@ struct AppView: View {
             Text("ChatBot")
           })
     }
-    .accentColor(Color.black)
+    .accentColor(Color.white)
   }
 }
 

@@ -73,10 +73,9 @@ struct ContentView: View {
                             .padding()
                     }
                     
-                    VStack(alignment: .center, spacing: 20) {
+                    HStack(alignment: .center, spacing: 20) {
                       ForEach(info) { item in
                           AppsCardView(data: item)
-
                       }
                     }
                     .frame(maxWidth: 600)

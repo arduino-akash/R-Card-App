@@ -6,29 +6,28 @@
 //
 
 import SwiftUI
+import LocalAuthentication
+
 
 struct HomeView: View {
+    
     // MARK: - PROPERTIES
 
     @State private var pulsateAnimation: Bool = false
     @State private var searchText = ""
+    @State private var isUnlocked = false
+
     
     var body: some View {
         NavigationView{
             ScrollView{
                 VStack {
-                    Section(header: HeaderView(text: "")) {
-                        Text("Welcome to R-Cards")
-                            .searchable(text: $searchText)
-                            .navigationTitle("R-Cards")
-                    }
-
                     SliderView()
                         .frame(width: 360, height: 600, alignment: .center)
                         .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 1, trailing: 10))
                         .padding(.leading, 20)
                         .padding(.trailing, 20)
-                        .padding(.top, 125)
+                        .padding(.top, 100)
                     
                     
                     Text("""
@@ -36,6 +35,7 @@ Building whats never been built
 """)
                     .frame(width: 400,  alignment: .leading)
                     .padding(.leading, 40)
+                    .padding(.top, 20)
                     .lineLimit(nil)
                     .font(Font.system(size: 30, weight: .bold))
                     .multilineTextAlignment(.leading)
@@ -70,7 +70,7 @@ Building whats never been built
                         .foregroundColor(.gray)
                     
                     Spacer()
-                }.navigationTitle("R-Card")
+                }
                     .navigationBarTitleTextColor(Color.white)
             }
             .background(
@@ -84,6 +84,27 @@ Building whats never been built
             })
         }.navigationViewStyle(StackNavigationViewStyle())
         
+    }
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+
+        // check whether biometric authentication is possible
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // it's possible, so go ahead and use it
+            let reason = "We need to unlock your data."
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                // authentication has now completed
+                if success {
+                    isUnlocked = true
+                } else {
+                    // there was a problem
+                }
+            }
+        } else {
+            // no biometrics
+        }
     }
 }
 

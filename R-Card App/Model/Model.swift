@@ -23,6 +23,7 @@ struct Fact: Identifiable {
   var id = UUID()
   var image: String
   var content: String
+  var url : String
 }
 
 struct Details: Identifiable {

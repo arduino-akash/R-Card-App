@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		90F314352934DADF00C11CD6 /* AKChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F314342934DA8400C11CD6 /* AKChatBot.framework */; };
-		90F314362934DADF00C11CD6 /* AZFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F3142E2934DA7700C11CD6 /* AZFramework.framework */; };
-		90F314372934DADF00C11CD6 /* PinchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F314282934DA5200C11CD6 /* PinchFramework.framework */; };
-		90F314382934DAEB00C11CD6 /* AKChatBot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F314342934DA8400C11CD6 /* AKChatBot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		90F314392934DAEB00C11CD6 /* AZFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F3142E2934DA7700C11CD6 /* AZFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		90F3143A2934DAEB00C11CD6 /* PinchFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90F314282934DA5200C11CD6 /* PinchFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA7064EA292A30C700CF93EB /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7064E9292A30C700CF93EB /* AppView.swift */; };
 		AA7064EC292A30F200CF93EB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7064EB292A30F200CF93EB /* HomeView.swift */; };
 		AA7064F2292A364A00CF93EB /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7064F1292A364A00CF93EB /* ClientView.swift */; };
@@ -20,7 +14,16 @@
 		AA7064FC292B849700CF93EB /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7064FB292B849700CF93EB /* AppDetailView.swift */; };
 		AA706502292B8B9B00CF93EB /* AppHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA706501292B8B9B00CF93EB /* AppHeaderView.swift */; };
 		AA70652E292C886000CF93EB /* AppCardNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70652D292C886000CF93EB /* AppCardNView.swift */; };
+		AA724E642935E20E007E1E6A /* SignInWithAppleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA724E632935E20E007E1E6A /* SignInWithAppleObject.swift */; };
 		AA8CB0A72934A30600AFE57B /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CB0A62934A30600AFE57B /* Authentication.swift */; };
+		AA8CB0EA2934E10A00AFE57B /* AKChatBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB0DD2934E0DA00AFE57B /* AKChatBot.framework */; };
+		AA8CB0EB2934E10A00AFE57B /* AZFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB0E32934E0EE00AFE57B /* AZFramework.framework */; };
+		AA8CB0EC2934E10A00AFE57B /* PinchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB0E92934E10000AFE57B /* PinchFramework.framework */; };
+		AA8CB0ED2934E11500AFE57B /* PinchFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB0E92934E10000AFE57B /* PinchFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA8CB0EE2934E11500AFE57B /* AZFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB0E32934E0EE00AFE57B /* AZFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA8CB0EF2934E11500AFE57B /* AKChatBot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CB0DD2934E0DA00AFE57B /* AKChatBot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA8CB1792935D91200AFE57B /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8CB1752935D3D900AFE57B /* SignInWithAppleButton.swift */; };
+		AA8E9C0E2936704F006D3703 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E9C0D2936704F006D3703 /* Auth.swift */; };
 		AAB2EC75292217380084695B /* R_Card_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2EC74292217380084695B /* R_Card_AppApp.swift */; };
 		AAB2EC77292217380084695B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB2EC76292217380084695B /* ContentView.swift */; };
 		AAB2EC792922173A0084695B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB2EC782922173A0084695B /* Assets.xcassets */; };
@@ -45,26 +48,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		90F314272934DA5200C11CD6 /* PBXContainerItemProxy */ = {
+		AA8CB0DC2934E0DA00AFE57B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 90F314232934DA5200C11CD6 /* PinchFramework.xcodeproj */;
+			containerPortal = AA8CB0D82934E0DA00AFE57B /* AKChatBot.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = AA8CB0B22934AE8F00AFE57B;
-			remoteInfo = PinchFramework;
+			remoteGlobalIDString = AA057F0B2930B48300E14AE0;
+			remoteInfo = AKChatBot;
 		};
-		90F3142D2934DA7700C11CD6 /* PBXContainerItemProxy */ = {
+		AA8CB0E22934E0EE00AFE57B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 90F314292934DA7700C11CD6 /* AZFramework.xcodeproj */;
+			containerPortal = AA8CB0DE2934E0EE00AFE57B /* AZFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AA81A15029309B5B00E65D0F;
 			remoteInfo = AZFramework;
 		};
-		90F314332934DA8400C11CD6 /* PBXContainerItemProxy */ = {
+		AA8CB0E82934E10000AFE57B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 90F3142F2934DA8400C11CD6 /* AKChatBot.xcodeproj */;
+			containerPortal = AA8CB0E42934E10000AFE57B /* PinchFramework.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = AA057F0B2930B48300E14AE0;
-			remoteInfo = AKChatBot;
+			remoteGlobalIDString = AA8CB0B22934AE8F00AFE57B;
+			remoteInfo = PinchFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,9 +78,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				90F314382934DAEB00C11CD6 /* AKChatBot.framework in Embed Frameworks */,
-				90F314392934DAEB00C11CD6 /* AZFramework.framework in Embed Frameworks */,
-				90F3143A2934DAEB00C11CD6 /* PinchFramework.framework in Embed Frameworks */,
+				AA8CB0ED2934E11500AFE57B /* PinchFramework.framework in Embed Frameworks */,
+				AA8CB0EE2934E11500AFE57B /* AZFramework.framework in Embed Frameworks */,
+				AA8CB0EF2934E11500AFE57B /* AKChatBot.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,9 +88,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		90F314232934DA5200C11CD6 /* PinchFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinchFramework.xcodeproj; path = ../PinchFramework/PinchFramework.xcodeproj; sourceTree = "<group>"; };
-		90F314292934DA7700C11CD6 /* AZFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AZFramework.xcodeproj; path = ../AZFramework/AZFramework.xcodeproj; sourceTree = "<group>"; };
-		90F3142F2934DA8400C11CD6 /* AKChatBot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AKChatBot.xcodeproj; path = ../AKChatBot/AKChatBot.xcodeproj; sourceTree = "<group>"; };
 		AA7064E9292A30C700CF93EB /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		AA7064EB292A30F200CF93EB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AA7064F1292A364A00CF93EB /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
@@ -95,7 +95,14 @@
 		AA7064FB292B849700CF93EB /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
 		AA706501292B8B9B00CF93EB /* AppHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaderView.swift; sourceTree = "<group>"; };
 		AA70652D292C886000CF93EB /* AppCardNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardNView.swift; sourceTree = "<group>"; };
+		AA724E632935E20E007E1E6A /* SignInWithAppleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleObject.swift; sourceTree = "<group>"; };
 		AA8CB0A62934A30600AFE57B /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		AA8CB0D82934E0DA00AFE57B /* AKChatBot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AKChatBot.xcodeproj; path = ../../Desktop/AKChatBot/AKChatBot.xcodeproj; sourceTree = "<group>"; };
+		AA8CB0DE2934E0EE00AFE57B /* AZFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AZFramework.xcodeproj; path = ../../Desktop/AZFramework/AZFramework.xcodeproj; sourceTree = "<group>"; };
+		AA8CB0E42934E10000AFE57B /* PinchFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PinchFramework.xcodeproj; path = ../../Desktop/PinchFramework/PinchFramework.xcodeproj; sourceTree = "<group>"; };
+		AA8CB1752935D3D900AFE57B /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
+		AA8E9C0C293605AE006D3703 /* R-Card-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "R-Card-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AA8E9C0D2936704F006D3703 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		AAB2EC71292217380084695B /* R-Card App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Card App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB2EC74292217380084695B /* R_Card_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Card_AppApp.swift; sourceTree = "<group>"; };
 		AAB2EC76292217380084695B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,39 +132,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90F314352934DADF00C11CD6 /* AKChatBot.framework in Frameworks */,
-				90F314362934DADF00C11CD6 /* AZFramework.framework in Frameworks */,
-				90F314372934DADF00C11CD6 /* PinchFramework.framework in Frameworks */,
+				AA8CB0EA2934E10A00AFE57B /* AKChatBot.framework in Frameworks */,
+				AA8CB0EB2934E10A00AFE57B /* AZFramework.framework in Frameworks */,
+				AA8CB0EC2934E10A00AFE57B /* PinchFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		90F314242934DA5200C11CD6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				90F314282934DA5200C11CD6 /* PinchFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		90F3142A2934DA7700C11CD6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				90F3142E2934DA7700C11CD6 /* AZFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		90F314302934DA8400C11CD6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				90F314342934DA8400C11CD6 /* AKChatBot.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		AA7064FD292B8A5600CF93EB /* AppsCardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,12 +190,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA8CB0D92934E0DA00AFE57B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8CB0DD2934E0DA00AFE57B /* AKChatBot.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA8CB0DF2934E0EE00AFE57B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8CB0E32934E0EE00AFE57B /* AZFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA8CB0E52934E10000AFE57B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8CB0E92934E10000AFE57B /* PinchFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AAB2EC68292217380084695B = {
 			isa = PBXGroup;
 			children = (
-				90F3142F2934DA8400C11CD6 /* AKChatBot.xcodeproj */,
-				90F314292934DA7700C11CD6 /* AZFramework.xcodeproj */,
-				90F314232934DA5200C11CD6 /* PinchFramework.xcodeproj */,
+				AA8CB0E42934E10000AFE57B /* PinchFramework.xcodeproj */,
+				AA8CB0DE2934E0EE00AFE57B /* AZFramework.xcodeproj */,
+				AA8CB0D82934E0DA00AFE57B /* AKChatBot.xcodeproj */,
 				AAB2EC73292217380084695B /* R-Card App */,
 				AAB2EC72292217380084695B /* Products */,
 				AA81A16829309CBC00E65D0F /* Frameworks */,
@@ -230,6 +237,7 @@
 		AAB2EC73292217380084695B /* R-Card App */ = {
 			isa = PBXGroup;
 			children = (
+				AA8E9C0C293605AE006D3703 /* R-Card-App-Info.plist */,
 				AAB2ECAA29237A920084695B /* Extensions */,
 				AAB2EC89292219130084695B /* App */,
 				AAB2EC84292217650084695B /* View */,
@@ -238,6 +246,9 @@
 				AAB2EC782922173A0084695B /* Assets.xcassets */,
 				AAB2EC7A2922173A0084695B /* Preview Content */,
 				AA8CB0A62934A30600AFE57B /* Authentication.swift */,
+				AA8E9C0D2936704F006D3703 /* Auth.swift */,
+				AA8CB1752935D3D900AFE57B /* SignInWithAppleButton.swift */,
+				AA724E632935E20E007E1E6A /* SignInWithAppleObject.swift */,
 			);
 			path = "R-Card App";
 			sourceTree = "<group>";
@@ -350,16 +361,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 90F314302934DA8400C11CD6 /* Products */;
-					ProjectRef = 90F3142F2934DA8400C11CD6 /* AKChatBot.xcodeproj */;
+					ProductGroup = AA8CB0D92934E0DA00AFE57B /* Products */;
+					ProjectRef = AA8CB0D82934E0DA00AFE57B /* AKChatBot.xcodeproj */;
 				},
 				{
-					ProductGroup = 90F3142A2934DA7700C11CD6 /* Products */;
-					ProjectRef = 90F314292934DA7700C11CD6 /* AZFramework.xcodeproj */;
+					ProductGroup = AA8CB0DF2934E0EE00AFE57B /* Products */;
+					ProjectRef = AA8CB0DE2934E0EE00AFE57B /* AZFramework.xcodeproj */;
 				},
 				{
-					ProductGroup = 90F314242934DA5200C11CD6 /* Products */;
-					ProjectRef = 90F314232934DA5200C11CD6 /* PinchFramework.xcodeproj */;
+					ProductGroup = AA8CB0E52934E10000AFE57B /* Products */;
+					ProjectRef = AA8CB0E42934E10000AFE57B /* PinchFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -370,25 +381,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		90F314282934DA5200C11CD6 /* PinchFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PinchFramework.framework;
-			remoteRef = 90F314272934DA5200C11CD6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		90F3142E2934DA7700C11CD6 /* AZFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AZFramework.framework;
-			remoteRef = 90F3142D2934DA7700C11CD6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		90F314342934DA8400C11CD6 /* AKChatBot.framework */ = {
+		AA8CB0DD2934E0DA00AFE57B /* AKChatBot.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AKChatBot.framework;
-			remoteRef = 90F314332934DA8400C11CD6 /* PBXContainerItemProxy */;
+			remoteRef = AA8CB0DC2934E0DA00AFE57B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA8CB0E32934E0EE00AFE57B /* AZFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AZFramework.framework;
+			remoteRef = AA8CB0E22934E0EE00AFE57B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA8CB0E92934E10000AFE57B /* PinchFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PinchFramework.framework;
+			remoteRef = AA8CB0E82934E10000AFE57B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -415,6 +426,7 @@
 				AAB2EC9129221B340084695B /* StartButtonView.swift in Sources */,
 				AAB2EC9729221CC90084695B /* SourceLinkView.swift in Sources */,
 				AA7064F2292A364A00CF93EB /* ClientView.swift in Sources */,
+				AA8E9C0E2936704F006D3703 /* Auth.swift in Sources */,
 				AAD748222923B8320095F1A1 /* AdView.swift in Sources */,
 				AAB2EC9B29221DBF0084695B /* SettingLabelView.swift in Sources */,
 				AAB2EC9329221BE70084695B /* CardRowView.swift in Sources */,
@@ -422,6 +434,7 @@
 				AA7064FC292B849700CF93EB /* AppDetailView.swift in Sources */,
 				AAB2EC88292217FC0084695B /* Info.swift in Sources */,
 				AAB2ECA52922398C0084695B /* TextHeaderView.swift in Sources */,
+				AA8CB1792935D91200AFE57B /* SignInWithAppleButton.swift in Sources */,
 				AA706502292B8B9B00CF93EB /* AppHeaderView.swift in Sources */,
 				AAB2EC8D292219C30084695B /* SettingsRowView.swift in Sources */,
 				AAB2EC9529221C5B0084695B /* CardHeaderView.swift in Sources */,
@@ -437,6 +450,7 @@
 				AAB2ECAC29237AB20084695B /* Icon.swift in Sources */,
 				AAB2EC9F29221F030084695B /* CardDetailView.swift in Sources */,
 				AA8CB0A72934A30600AFE57B /* Authentication.swift in Sources */,
+				AA724E642935E20E007E1E6A /* SignInWithAppleObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,9 +579,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"R-Card App/Preview Content\"";
-				DEVELOPMENT_TEAM = G8K46JYH39;
+				DEVELOPMENT_TEAM = A7R478R294;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "R-Card-App-Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -595,9 +611,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"R-Card App/Preview Content\"";
-				DEVELOPMENT_TEAM = G8K46JYH39;
+				DEVELOPMENT_TEAM = A7R478R294;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "R-Card-App-Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
